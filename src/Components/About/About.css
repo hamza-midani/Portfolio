@@ -1,0 +1,135 @@
+/* #about .about {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  margin-top: -50px;
+} */
+.section-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  padding: 5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin: 5rem;
+}
+.section-title span {
+  color: crimson;
+}
+
+#about {
+  width: 100%;
+
+  padding: 0px 13%;
+  margin: 0 0 25rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.col-left {
+  width: 15rem;
+  height: 39rem;
+}
+
+.col-right {
+  width: 93rem;
+  margin: 0 auto;
+}
+
+.col-right h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-bottom: 10px;
+  margin-left: 10rem;
+}
+
+.pa {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  margin-left: 10rem;
+}
+
+.col-right .cta {
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  font-size: 2rem;
+  margin-left: 19rem;
+}
+#about .col-left .about-img {
+  height: 100%;
+  width: 150%;
+  position: relative;
+  border: 10px solid white;
+  margin-top: -8rem;
+}
+#about .col-left .about-img::after {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: 19px;
+  height: 98%;
+  width: 98%;
+  border: 7px solid crimson;
+  z-index: -1;
+}
+#about .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-right: 29rem;
+  transition: transform 0.2s;
+}
+#about .social-media a:hover {
+  transform: scale(1.2);
+}
+
+#about .donnees-personnel {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  margin-left: 10rem;
+}
+@media (max-width: 500px) {
+  .section-title {
+    font-size: 3rem;
+  }
+  #about .col-left {
+    width: 200px;
+  }
+  #about .col-right h2 {
+    font-size: 1.5rem;
+    margin-left: 5rem;
+  }
+  #about .pa {
+    font-size: 1.2rem;
+    margin-left: 5rem;
+  }
+  #about .col-right .cta {
+    margin-left: 5rem;
+  }
+  #about .col-left .about-img {
+    width: 130%;
+  }
+  #about .col-left .about-img::after {
+    left: -28px;
+    top: 14px;
+  }
+  #about .social-media {
+    padding-right: 0rem;
+  }
+  #about .donnees-personnel {
+    margin-left: 5rem;
+  }
+}

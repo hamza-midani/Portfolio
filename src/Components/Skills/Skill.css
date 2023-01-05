@@ -1,0 +1,77 @@
+.skills_section {
+  width: 100%;
+  height: 100vh;
+  padding: 0px 13%;
+  background-color: rgba(0, 0, 0, 0.082);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.skills_head {
+  width: 100%;
+  margin-bottom: 180px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.skills_head h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  position: relative;
+
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.skills_head h2 span {
+  color: crimson;
+}
+.skills_main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 50px;
+}
+.skills_main .skill_bar .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.skill_bar .info p:nth-child(2) {
+  font-weight: 500;
+}
+.skill_bar .bar {
+  width: 100%;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.144);
+  border-radius: 25px;
+  margin-top: 5px;
+  position: relative;
+}
+.skill_bar .bar span {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: crimson;
+  border-radius: 25px;
+}
+
+/* animation */
+.skill_bar .bar .bar-animation {
+  float: left;
+  height: 100%;
+  transition: 2s ease;
+}
+/* end animation */
+
+@media (max-width: 992px) {
+  .skills_head h2 {
+    font-size: 3rem;
+  }
+  .skills_main {
+    grid-template-columns: 1fr;
+  }
+}

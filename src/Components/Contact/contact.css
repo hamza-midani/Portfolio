@@ -1,0 +1,161 @@
+#contact {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.contact-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-right: 2rem;
+}
+.contact-heading h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  position: relative;
+
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.contact-heading span {
+  color: crimson;
+}
+
+.containner {
+  max-width: 1170px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 15rem;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.contact-widget {
+  margin-bottom: 40px;
+  padding-right: 10px;
+}
+.contact-widget-item {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.icon {
+  height: 60px;
+  width: 60px;
+  background-color: crimson;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  margin-right: 30px;
+  float: left;
+}
+.icon i {
+  position: relative;
+  top: 3px;
+  font-size: 24px;
+  color: #e1e1e1;
+}
+.text {
+  overflow: hidden;
+}
+.text h5 {
+  color: #111;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.text p {
+  font-size: 16px;
+  color: #111;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0 0 15px 0;
+}
+.contact-form {
+  text-align: center;
+  margin-bottom: 40px;
+}
+form {
+  display: block;
+  margin-top: 0em;
+}
+form input {
+  height: 46px;
+  width: 100%;
+  padding-left: 20px;
+  font-size: 15px;
+  color: #111;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  transition: all, 0.3s;
+}
+form textarea {
+  height: 110px;
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 12px;
+  font-size: 15px;
+  color: #111;
+  border: 1px solid #e1e1e1;
+  resize: none;
+  margin-bottom: 9px;
+  border-radius: 4px;
+  transition: all, 0.3s;
+}
+form botton {
+  width: 100%;
+  cursor: pointer;
+}
+.site-btn {
+  border: crimson solid 0.1px;
+  display: inline-block;
+  background: white;
+  color: crimson;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 12px 40px 10px;
+}
+.site-btn:hover {
+  background-color: crimson;
+  color: white;
+}
+.map-column {
+  flex: 0 0 auto;
+  width: 100%;
+}
+.map-column iframe {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .contact-heading h2 {
+    font-size: 3rem;
+  }
+  .column {
+    width: 100%;
+  }
+  form input {
+    height: 40px;
+    font-size: 14px;
+  }
+  form textarea {
+    height: 100px;
+    font-size: 14px;
+  }
+  .site-btn {
+    font-size: 13px;
+    padding: 10px 35px 8px;
+  }
+}
